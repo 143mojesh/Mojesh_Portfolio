@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mojesh Portfolio</title>
+  <link rel="stylesheet" href="moj.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <span class="close-btn" onclick="closeMenu()">&times;</span>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <header>
+      <span class="hamburger" onclick="openMenu()">&#9776;</span>
+      <img src="C:\Users\malla\OneDrive\Desktop\Mine\mojesh.jpg.jpg" alt="Mojesh Photo" />
+      <h1>Mallavarapu Mojesh</h1>
+      <p>B.Tech CSE Student | Frontend Developer (HTML & CSS)</p>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a passionate B.Tech student majoring in Computer Science Engineering. I specialize in web development using HTML and CSS to create visually appealing and responsive websites.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Responsive Design</li>
+          <li>Problem-Solving</li>
+          <li>Web Accessibility</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>This is my personal portfolio website where I showcase my skills and projects built using only HTML and CSS.</p>
+      </div>
+      <div class="project">
+        <h3>Personal Blog</h3>
+        <p>A simple blog website created to demonstrate my web development skills using clean and responsive design.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <p><strong>Phone:</strong> 9973913930</p>
+        <p><strong>Email:</strong> mallavarapumojesh6@gmail.com</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function openMenu() {
+      document.getElementById("sidebar").style.display = "block";
+    }
+
+    function closeMenu() {
+      document.getElementById("sidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
